@@ -19,7 +19,7 @@
     }
     .container {
       max-width: 600px;
-      padding: 40px;
+      padding: 40px 20px;
       background: #ffffff;
       border-radius: 12px;
       box-shadow: 0 6px 18px rgba(0,0,0,0.1);
@@ -46,6 +46,20 @@
     a:hover {
       text-decoration: underline;
     }
+    .cta {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 14px 22px;
+      background: #0a66c2;
+      color: #fff !important;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: background 0.3s;
+    }
+    .cta:hover {
+      background: #084b91;
+    }
     .tagline {
       margin-top: 24px;
       font-size: 16px;
@@ -56,13 +70,15 @@
 </head>
 <body>
   <div class="container">
-    <!-- Replace src with your logo link -->
-        <img src="https://drive.google.com/uc?export=view&id=1v9AlHtT-f16Gp796q9cI2SZ0dfrNFo0A" alt="ESQ Support Solutions Logo" class="logo">
-
+    <!-- Use logo uploaded in repo (e.g., assets/logo.png) -->
+    <img src="logo.png" alt="ESQ Support Solutions Logo" class="logo">
     
     <h1>Our Website is Still in Progress</h1>
     <p>Please bear with us while we prepare something amazing for you.</p>
     <p>You may reach us at <a href="mailto:contact@esqsupportsolutions.com">contact@esqsupportsolutions.com</a></p>
+    
+    <!-- Calendly CTA -->
+    <a href="https://calendly.com/contact-esqsupportsolutions/30min" class="cta">Book a 30-Minute Call</a>
     
     <div class="tagline">“Legal support you can rely on.”</div>
   </div>
