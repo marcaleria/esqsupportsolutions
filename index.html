@@ -16,6 +16,7 @@
       align-items: center;
       height: 100vh;
       text-align: center;
+      flex-direction: column;
     }
     .container {
       max-width: 600px;
@@ -56,9 +57,15 @@
       text-decoration: none;
       border-radius: 6px;
       transition: background 0.3s;
+      animation: pulse 2s infinite;
     }
     .cta:hover {
       background: #084b91;
+    }
+    @keyframes pulse {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); }
     }
     .tagline {
       margin-top: 24px;
@@ -66,11 +73,34 @@
       font-style: italic;
       color: #555;
     }
+    .socials {
+      margin-top: 24px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+    .socials a {
+      display: inline-block;
+      transition: transform 0.2s, filter 0.2s;
+    }
+    .socials a:hover {
+      transform: scale(1.15);
+      filter: drop-shadow(0 0 4px #0a66c2);
+    }
+    .socials img {
+      width: 32px;
+      height: 32px;
+    }
+    footer {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #777;
+    }
   </style>
 </head>
 <body>
   <div class="container">
-    <!-- Use logo uploaded in repo (e.g., assets/logo.png) -->
+    <!-- Logo -->
     <img src="logo.png" alt="ESQ Support Solutions Logo" class="logo">
     
     <h1>Our Website is Still in Progress</h1>
@@ -81,6 +111,24 @@
     <a href="https://calendly.com/contact-esqsupportsolutions/30min" class="cta">Book a 30-Minute Call</a>
     
     <div class="tagline">“Legal support you can rely on.”</div>
+
+    <!-- Social Icons -->
+    <div class="socials">
+      <a href="https://www.linkedin.com/company/esqsupportsolutions" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn">
+      </a>
+      <a href="https://www.facebook.com/esqsupportsolutions/" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook">
+      </a>
+      <a href="mailto:contact@esqsupportsolutions.com">
+        <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email">
+      </a>
+    </div>
   </div>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 ESQ Support Solutions. All rights reserved.
+  </footer>
 </body>
 </html>
