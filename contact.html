@@ -4,47 +4,46 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact Us | ESQ Support Solutions</title>
-<link rel="icon" type="image/png" href="favicon.png">
   <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="favicon.png" />
 </head>
 <body>
   <header>
-    <img src="https://i.imgur.com/mABpqzq.png" alt="ESQ Support Solutions Logo" class="logo">
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="services.html">Services</a>
-      <a href="contact.html" class="active">Contact</a>
-    </nav>
+    <div class="container">
+      <img src="logo.png" alt="ESQ Support Solutions Logo" class="logo" />
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+    </div>
   </header>
 
   <main>
-    <section class="contact">
-      <h1>Get in Touch</h1>
-      <p>We’d love to help you reclaim your time. Reach out through the form below or schedule a call directly.</p>
+    <section class="content">
+      <h1>Contact Us</h1>
+      <p>Ready to delegate your legal admin work and reclaim your time? We’d love to hear from you.</p>
 
-      <form>
-        <input type="text" placeholder="Your Name" required />
-        <input type="email" placeholder="Your Email" required />
-        <textarea placeholder="Your Message" rows="5" required></textarea>
-        <button type="submit" class="cta-button">Submit</button>
+      <form action="https://formsubmit.co/contact@esqsupportsolutions.com" method="POST" class="contact-form">
+        <input type="text" name="name" placeholder="Full Name" required />
+        <input type="email" name="email" placeholder="Email Address" required />
+        <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+        <button type="submit" class="calendly-btn">Send Message</button>
       </form>
 
-      <div class="direct-contact">
-        <p><strong>Email:</strong> <a href="mailto:contact@esqsupportsolutions.com">contact@esqsupportsolutions.com</a></p>
-        <p><strong>Calendly:</strong> <a href="https://calendly.com/contact-esqsupportsolutions/30min" target="_blank">Book a Call</a></p>
-        <p><strong>Facebook:</strong> <a href="https://facebook.com/esqsupportsolutions" target="_blank">Visit Page</a></p>
-        <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/company/esqsupportsolutions" target="_blank">Visit Page</a></p>
+      <div class="cta-center">
+        <p>or schedule directly:</p>
+        <a href="https://calendly.com/esqsupportsolutions" class="calendly-btn">Book a Consultation</a>
       </div>
     </section>
   </main>
 
   <footer>
-    <p>© 2025 ESQ Support Solutions</p>
+    <p>© 2025 ESQ Support Solutions | contact@esqsupportsolutions.com</p>
     <div class="socials">
-      <a href="https://facebook.com/esqsupportsolutions" target="_blank">Facebook</a> |
-      <a href="https://linkedin.com/company/esqsupportsolutions" target="_blank">LinkedIn</a>
+      <a href="https://www.facebook.com/esqsupportsolutions" target="_blank">Facebook</a> |
+      <a href="https://www.linkedin.com/company/esqsupportsolutions" target="_blank">LinkedIn</a>
     </div>
-    <a href="mailto:contact@esqsupportsolutions.com">contact@esqsupportsolutions.com</a>
   </footer>
 </body>
 </html>
