@@ -71,6 +71,21 @@ nav a:hover {
   font-size: 2.8rem;
   margin-bottom: 20px;
 }
+.hero h1 {
+  font-size: 2.5rem;
+  color: #ffffff;
+  text-align: center;
+  white-space: nowrap; /* keeps it on one line */
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 1.6rem;
+    white-space: normal; /* allows wrapping only on small devices */
+  }
+}
+
 
 .hero p {
   font-size: 1.2rem;
