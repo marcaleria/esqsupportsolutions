@@ -1,54 +1,97 @@
+/* === BRAND COLORS ===
+Primary Blue: #0a66c2
+Dark Navy: #102a43
+Light Gray: #f4f6f8
+Accent Gold: #f4b400
+===================== */
+
 /* === GLOBAL STYLES === */
 body {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Inter', 'Arial', sans-serif;
   margin: 0;
   padding: 0;
-  color: #1a1a1a;
-  background-color: #f8f9fb;
+  background-color: #f4f6f8;
+  color: #102a43;
+  line-height: 1.6;
+}
+
+a {
+  color: #0a66c2;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 /* === HEADER === */
 header {
   background-color: #0a66c2;
   color: white;
-  padding: 20px 0;
+  padding: 25px 0;
   text-align: center;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
 }
 
 header h1 {
   margin: 0;
-  font-size: 28px;
-  font-weight: bold;
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
 }
 
 nav {
-  margin-top: 10px;
+  margin-top: 12px;
 }
 
 nav a {
   color: white;
   text-decoration: none;
-  margin: 0 15px;
-  font-weight: 600;
+  margin: 0 18px;
+  font-weight: 500;
+  transition: opacity 0.2s ease;
 }
 
 nav a:hover {
-  text-decoration: underline;
+  opacity: 0.8;
 }
 
 /* === MAIN CONTENT === */
 main {
-  padding: 40px 20px;
   max-width: 900px;
-  margin: 0 auto;
+  margin: 50px auto;
   background: white;
   border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  padding: 50px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
 }
 
 main h2 {
   color: #0a66c2;
-  font-size: 24px;
+  font-size: 26px;
+  margin-bottom: 16px;
+  font-weight: 700;
+}
+
+main p {
+  margin-bottom: 16px;
+  font-size: 16px;
+}
+
+button, .cta-btn {
+  display: inline-block;
+  background-color: #0a66c2;
+  color: #fff;
+  font-weight: 600;
+  padding: 12px 24px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover, .cta-btn:hover {
+  background-color: #084b94;
 }
 
 /* === FOOTER === */
@@ -56,12 +99,32 @@ footer {
   background-color: #102a43;
   color: #ffffff;
   text-align: center;
-  padding: 20px 10px;
+  padding: 25px 10px;
   font-size: 14px;
-  margin-top: 40px;
+  margin-top: 60px;
 }
 
 footer a {
-  color: #0a66c2;
-  text-decoration: none;
+  color: #f4b400;
+  font-weight: 600;
+}
+
+footer a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* === RESPONSIVE DESIGN === */
+@media (max-width: 768px) {
+  main {
+    padding: 25px;
+  }
+
+  nav a {
+    margin: 0 8px;
+  }
+
+  header h1 {
+    font-size: 24px;
+  }
 }
