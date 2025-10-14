@@ -1,52 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact | ESQ Support Solutions</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us | ESQ Support Solutions</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <h1>Contact Us</h1>
+    <img src="https://i.imgur.com/mABpqzq.png" alt="ESQ Support Solutions Logo" class="logo">
     <nav>
       <a href="index.html">Home</a>
-      <a href="about.html">About</a>
       <a href="services.html">Services</a>
-      <a href="contact.html">Contact</a>
+      <a href="contact.html" class="active">Contact</a>
     </nav>
   </header>
 
   <main>
-    <section>
-      <h2>Let’s Connect</h2>
-      <p>We’d love to learn more about your firm and explore how our team can help. Get in touch below:</p>
+    <section class="contact">
+      <h1>Get in Touch</h1>
+      <p>We’d love to help you reclaim your time. Reach out through the form below or schedule a call directly.</p>
 
-      <form action="https://formspree.io/f/maylwrnb" method="POST">
-        <label>
-          Your Name:<br>
-          <input type="text" name="name" required>
-        </label><br><br>
-
-        <label>
-          Your Email:<br>
-          <input type="email" name="email" required>
-        </label><br><br>
-
-        <label>
-          Message:<br>
-          <textarea name="message" rows="5" required></textarea>
-        </label><br><br>
-
-        <button type="submit">Send Message</button>
+      <form>
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" rows="5" required></textarea>
+        <button type="submit" class="cta-button">Submit</button>
       </form>
 
-      <p>Or reach us directly at: <a href="mailto:marc@esqsupportsolutions.com">marc@esqsupportsolutions.com</a></p>
+      <div class="direct-contact">
+        <p><strong>Email:</strong> <a href="mailto:contact@esqsupportsolutions.com">contact@esqsupportsolutions.com</a></p>
+        <p><strong>Calendly:</strong> <a href="https://calendly.com/contact-esqsupportsolutions/30min" target="_blank">Book a Call</a></p>
+        <p><strong>Facebook:</strong> <a href="https://facebook.com/esqsupportsolutions" target="_blank">Visit Page</a></p>
+        <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/company/esqsupportsolutions" target="_blank">Visit Page</a></p>
+      </div>
     </section>
   </main>
 
   <footer>
-    <p>© 2025 ESQ Support Solutions. Legal support you can rely on.</p>
+    <p>© 2025 ESQ Support Solutions</p>
+    <div class="socials">
+      <a href="https://facebook.com/esqsupportsolutions" target="_blank">Facebook</a> |
+      <a href="https://linkedin.com/company/esqsupportsolutions" target="_blank">LinkedIn</a>
+    </div>
+    <a href="mailto:contact@esqsupportsolutions.com">contact@esqsupportsolutions.com</a>
   </footer>
 </body>
 </html>
